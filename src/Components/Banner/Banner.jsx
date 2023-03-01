@@ -2,7 +2,7 @@ import styles from "./Banner.module.scss";
 import classNames from "classnames";
 
 const Banner = (props) => {
-  const { imgBanner, bannerTitle, bannerBtn } = props();
+  const { imgBanner, bannerTitle, bannerBtn } = props;
   return (
     <section className={styles.banner}>
       <div className={styles.container}>

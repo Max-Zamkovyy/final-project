@@ -25,76 +25,76 @@ function App() {
   return (
     <div className="App">
       {/* <Routes> */}
-        <body>
-          <Header img={logo} />
-          <main>
-            <Banner
-              imgBanner={bannerImg}
-              bannerTitle="Waffle Hooded Coat"
-              bannerBtn="Shop Now"
-            />
-            <section className={App.category}>
-              <div className={App.container}>
-                <Chapter name="This Season Collection" />
-                <div className={App.category__grid}>
-                  <Category img={categoryImg1} categoryName="Glasses" />
-                  <Category img={categoryImg2} categoryName="Sneakers" />
-                  <Category img={categoryImg3} categoryName="Handbags" />
-                </div>
-              </div>
-            </section>
 
-            <section className={App.products}>
-              <div className={App.container}>
-                <Chapter name="This Week's Highlights" />
-                <div className={App.products_grid}>
-                  <Product
-                    img={product1}
-                    productName="Hoodie with pocket"
-                    price="79"
-                  />
-                  <Product
-                    img={product2}
-                    productName="Flowers cotton dress"
-                    price="85"
-                  />
-                  <Product
-                    img={product3}
-                    productName="Hoodie with pocket"
-                    price="65"
-                  />
-                  <Product
-                    img={product4}
-                    productName="Oversize cotton sweatshirt"
-                    price="74"
-                  />
-                  <Product
-                    img={product5}
-                    productName="Striped cotton-blend sweatshirt"
-                    price="96"
-                  />
-                  <Product
-                    img={product6}
-                    productName="Hoodie with pocket"
-                    price="46"
-                  />
-                  <Product
-                    img={product7}
-                    productName="Flowers cotton dress"
-                    price="85"
-                  />
-                  <Product
-                    img={product8}
-                    productName="Hoodie with pocket"
-                    price="63"
-                  />
-                </div>
-                <Button bannerBtn="Shop Now" />
-              </div>
-            </section>
-          </main>
-          <Footer />
-        </body>
+      <Header img={logo} />
+      <main>
+        <Banner
+          imgBanner={bannerImg}
+          bannerTitle="Waffle Hooded Coat"
+          bannerBtn="Shop Now"
+        />
+        <section className="category">
+          <div className="container">
+            <Chapter name="This Season Collection" />
+            <div className="category_grid">
+              <Category img={categoryImg1} categoryName="Glasses" />
+              <Category img={categoryImg2} categoryName="Sneakers" />
+              <Category img={categoryImg3} categoryName="Handbags" />
+            </div>
+          </div>
+        </section>
+
+        <section className="products">
+          <div className="container">
+            <Chapter name="This Week's Highlights" />
+            <div className="products_grid">
+              <Product
+                img={product1}
+                productName="Hoodie with pocket"
+                price="79"
+              />
+              <Product
+                img={product2}
+                productName="Flowers cotton dress"
+                price="85"
+              />
+              <Product
+                img={product3}
+                productName="Hoodie with pocket"
+                price="65"
+              />
+              <Product
+                img={product4}
+                productName="Oversize cotton sweatshirt"
+                price="74"
+              />
+              <Product
+                img={product5}
+                productName="Striped cotton-blend sweatshirt"
+                price="96"
+              />
+              <Product
+                img={product6}
+                productName="Hoodie with pocket"
+                price="46"
+              />
+              <Product
+                img={product7}
+                productName="Flowers cotton dress"
+                price="85"
+              />
+              <Product
+                img={product8}
+                productName="Hoodie with pocket"
+                price="63"
+              />
+            </div>
+            <Button bannerBtn="Shop Now" />
+          </div>
+        </section>
+      </main>
+      <Footer />
+
       {/* </Routes> */}
     </div>
   );

@@ -61,21 +61,21 @@ img {
   cursor: none;
 }
 
-.btn-dark {
+.btn_dark {
   color: #fff;
   background-color: #343a40;
   border-color: #343a40;
   box-shadow: none;
 }
 
-.btn-dark:hover {
+.btn_dark:hover {
   color: #fff;
   background-color: #23272b;
   border-color: #1d2124;
 }
 
-.btn-dark.disabled,
-.btn-dark:disabled {
+.btn_dark.disabled,
+.btn_dark:disabled {
   color: #fff;
   background-color: #343a40;
   border-color: #343a40;

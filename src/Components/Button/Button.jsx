@@ -1,12 +1,17 @@
-import classNames from 'classnames';
-import styles from './Button.module.scss'
+import classNames from "classnames";
+import styles from "./Button.module.scss";
 
-const Button = (bannerBtn) => {
+const Button = ({ bannerBtn }) => {
   return (
-    <div class="products__bottom">
-     <a href="/" className={classNames(styles.btn, styles.btn_outline_primary)}>{bannerBtn}</a>
-  </div>
-  )
-}
+    <div className="products_bottom">
+      <a
+        href="/"
+        className={classNames(styles.btn, styles.btn_outline_primary)}
+      >
+        {bannerBtn}
+      </a>
+    </div>
+  );
+};
 
-export default Button
+export default Button;

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Header.module.scss";
 
 const Header = (props) => {
-  const { img, number } = props();
+  const {img} = props;
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -47,7 +47,7 @@ const Header = (props) => {
                     />
                   </svg>
 
-                  <span className={styles.number}>{number}</span>
+                  <span className={styles.number}>2</span>
                 </a>
               </li>
             </ul>

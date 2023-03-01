@@ -74,7 +74,7 @@
   display: block;
 }
 
-.add-to-wishlist {
+.add_to_wishlist {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -87,15 +87,15 @@
   background-color: #fff;
 }
 
-.add-to-wishlist:hover {
+.add_to_wishlist:hover {
   background-color: #000;
 }
 
-.add-to-wishlist svg {
+.add_to_wishlist svg {
   width: 24px;
   height: 24px;
 }
 
-.add-to-wishlist:hover svg {
+.add_to_wishlist:hover svg {
   color: #fff;
 }
