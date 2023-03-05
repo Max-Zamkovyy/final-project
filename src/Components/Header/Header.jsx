@@ -1,8 +1,7 @@
-import React from "react";
 import styles from "./Header.module.scss";
 
 const Header = (props) => {
-  const {img} = props;
+  const { img } = props;
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -13,7 +12,7 @@ const Header = (props) => {
           <div className={styles.navbar}>
             <ul>
               <li>
-                <a href="/" className={styles.navbar__icon}>
+                <a href="./Wishlist/Wishlist" className={styles.navbar__icon}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

@@ -1,4 +1,4 @@
-// import { Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Banner from "./Components/Banner/Banner";
@@ -7,6 +7,7 @@ import Product from "./Components/Product/Product";
 import Footer from "./Components/Footer/Footer";
 import Button from "./Components/Button/Button";
 import Chapter from "./Components/Chapter/Chapter";
+import Wishlist from "./Components/Wishlist/Wishlist";
 import logo from "./Components/Header/img/logo-black.png";
 import bannerImg from "./Components/Banner/img/image-home-07.jpg";
 import categoryImg1 from "./Components/Category/img/banner-20.jpg";
@@ -24,8 +25,6 @@ import product8 from "./Components/Product/img/product-08.jpg";
 function App() {
   return (
     <div className="App">
-      {/* <Routes> */}
-
       <Header img={logo} />
       <main>
         <Banner
@@ -94,8 +93,9 @@ function App() {
         </section>
       </main>
       <Footer />
-
-      {/* </Routes> */}
+      <Routes>
+        <Route path="./Components/Wishlist/Wishlist" element={<Wishlist />} />
+      </Routes>
     </div>
   );
 }
