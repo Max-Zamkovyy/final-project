@@ -1,8 +1,7 @@
 import classNames from "classnames";
 import styles from "./Wishlist.module.scss";
 import stylesBtn from "../Category/Category.module.scss";
-import product from "./img/product-07.jpg"
-
+import product from "./img/product-07.jpg";
 
 const Wishlist = () => {
   return (
