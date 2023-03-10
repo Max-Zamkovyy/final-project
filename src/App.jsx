@@ -1,5 +1,7 @@
 import { useReducer, createContext } from "react";
 import { Routes, Route } from "react-router-dom";
+import Header from "./Components/Header/Header";
+import logo from "../src/Components/Header/img/logo-black.png"
 import Layout from "./Components/Layout/Layout";
 import HomePage from "./Pages/Home/HomePage";
 import WishlistPage from "./Pages/WishlistPage/WishlistPage";
@@ -11,10 +13,10 @@ function App() {
     productWishlist: [],
   };
   const wishlistReducer = (state, action) => {
-    switch (action.type) {
+    const {type, payload} = action;
+    switch (type) {
       case "ADD_TO_WISHLIST":
-        console.log("ADD_TO_WISHLIST");
-        break;
+        return {productWishlist: [payload]};
       case "REMOVE_FROM_WISHLIST":
         break;
       default:
@@ -24,8 +26,8 @@ function App() {
 
   const [state, dispatch] = useReducer(wishlistReducer, initialState);
 
-  const addToWishlist = () => {
-    dispatch({ type: "ADD_TO_WISHLIST"});
+  const addToWishlist = (props) => {
+    dispatch({ type: "ADD_TO_WISHLIST", payload: props});
   };
 
   const removeFromWishlist = () => {
@@ -35,10 +37,12 @@ function App() {
   const value = {
     addToWishlist: addToWishlist,
     removeFromWishlist: removeFromWishlist,
+    productWishlist: state.productWishlist
   }
   return (
     <div className="App">
-      <WishlistContext.Provider value={{value}}>
+      <WishlistContext.Provider value={value}>
+      <Header img={logo} />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route path="/" element={<HomePage />} />

@@ -1,10 +1,18 @@
+
+import { useContext } from "react";
+import { WishlistContext } from "../../App";
 import classNames from "classnames";
 import styles from "./Wishlist.module.scss";
 import stylesBtn from "../Category/Category.module.scss";
-import product from "../Product/img/product-07.jpg";
+
+
 
 const Wishlist = () => {
+
+  const {productWishlist} = useContext(WishlistContext)
+  console.log(productWishlist)
   return (
+
     <div className={styles.item}>
       <div className={styles.item__content}>
         <button className={styles.item__delete}>
@@ -26,14 +34,14 @@ const Wishlist = () => {
 
         <div className={styles.item__body}>
           <img
-            src={product}
-            alt="productName"
+            src={productWishlist.img}
+            alt={productWishlist.productName}
             className={styles.item__image}
           />
 
           <div className={classNames(styles.media_body, styles.mw - 210)}>
-            <p className={styles.item__title}>ProdName</p>
-            <p className={styles.item__price}>25</p>
+            <p className={styles.item__title}>{productWishlist.productName}</p>
+            <p className={styles.item__price}>{productWishlist.price}</p>
           </div>
         </div>
       </div>
