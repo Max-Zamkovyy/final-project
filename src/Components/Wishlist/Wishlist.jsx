@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import styles from "./Wishlist.module.scss";
 import stylesBtn from "../Category/Category.module.scss";
-import product from "./img/product-07.jpg";
+import product from "../Product/img/product-07.jpg";
 
 const Wishlist = () => {
   return (
@@ -27,13 +27,13 @@ const Wishlist = () => {
         <div className={styles.item__body}>
           <img
             src={product}
-            alt="Flowers cotton dress"
+            alt="productName"
             className={styles.item__image}
           />
 
           <div className={classNames(styles.media_body, styles.mw - 210)}>
-            <p className={styles.item__title}>Flowers cotton dress</p>
-            <p className={styles.item__price}>$29.00</p>
+            <p className={styles.item__title}>ProdName</p>
+            <p className={styles.item__price}>25</p>
           </div>
         </div>
       </div>

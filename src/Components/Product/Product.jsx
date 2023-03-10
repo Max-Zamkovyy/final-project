@@ -1,13 +1,18 @@
-import React from "react";
+import { useContext } from "react";
+import { WishlistContext } from "../../App";
 import styles from "./Product.module.scss";
 
 const Product = (props) => {
   const { img, productName, price } = props;
+  const {addToWishlist} = useContext(WishlistContext);
+  // const handleClick = () => {
+  //   addToWishlist(props);
+  // };
   return (
     <div className={styles.product}>
       <div className={styles.products_image}>
-        <a href="/" className={styles.products_image_block}>
-          <img src={img} alt="" />
+        <a href="/"  className={styles.products_image_block}>
+          <img src={img} alt={productName} />
         </a>
         <a href="/" className={styles.add_to_wishlist}>
           <svg
@@ -31,6 +36,7 @@ const Product = (props) => {
           <a href="/">{productName}</a>
         </h3>
         <p>${price}</p>
+        <button onClick={addToWishlist}>ADD</button>
       </div>
     </div>
   );
