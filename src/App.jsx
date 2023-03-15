@@ -17,7 +17,7 @@ function App() {
     const { type, payload } = action;
     switch (type) {
       case "ADD_TO_WISHLIST":
-        return { productWishlist: [...state.productWishlist, payload] };
+        return { productWishlist: [payload] };
       case "REMOVE_FROM_WISHLIST":
         break;
       default:
@@ -38,7 +38,7 @@ function App() {
   const value = {
     addToWishlist: addToWishlist,
     removeFromWishlist: removeFromWishlist,
-    productWishlist: state.productWishlist,
+    state
   };
   return (
     <div className="App">

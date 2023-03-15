@@ -1,10 +1,10 @@
-import { useContext } from "react";
-import { WishlistContext } from "../../App";
+// import { useContext } from "react";
+// import { WishlistContext } from "../../App";
 import Wishlist from "../../Components/Wishlist/Wishlist";
 import styles from "./WishlistPage.module.scss";
 
 const WishlistPage = () => {
-  const { productWishlist } = useContext(WishlistContext);
+  // const { productWishlist } = useContext(WishlistContext);
 
   return (
     <div>

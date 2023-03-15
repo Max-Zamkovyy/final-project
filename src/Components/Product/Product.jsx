@@ -3,14 +3,14 @@ import { WishlistContext } from "../../App";
 import styles from "./Product.module.scss";
 
 const Product = (props) => {
-  const { img, productName, price, id } = props;
+  const { img, productName, price} = props;
   const { addToWishlist } = useContext(WishlistContext);
   const handleClick = () => {
-    addToWishlist();
+    addToWishlist({img, productName, price});
     console.log(addToWishlist())
   };
   return (
-    <div className={styles.product} id={id}>
+    <div className={styles.product}>
       <div className={styles.products_image}>
         <a href="/" className={styles.products_image_block}>
           <img src={img} alt={productName} />

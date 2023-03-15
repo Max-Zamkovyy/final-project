@@ -55,3 +55,22 @@
   text-align: center;
 }
 
+.btn_dark {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+  box-shadow: none;
+}
+
+.btn_dark:hover {
+  color: #fff;
+  background-color: #23272b;
+  border-color: #1d2124;
+}
+
+.btn_dark.disabled,
+.btn_dark:disabled {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
