@@ -9,9 +9,8 @@ const WishlistPage = () => {
   return (
     <div>
       <h2 className={styles.wishlist__title}>Wishlist</h2>
-      {productWishlist.map((props) => (
-        <Wishlist props={props} />
-      ))}
+        <Wishlist />
+
     </div>
   );
 };

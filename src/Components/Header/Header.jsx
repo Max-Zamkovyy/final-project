@@ -32,7 +32,7 @@ const Header = (props) => {
                 </NavLink>
               </li>
               <li>
-                <a href="/" className={styles.navbar__icon}>
+                <NavLink to="/CartPage" className={styles.navbar__icon}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -49,7 +49,7 @@ const Header = (props) => {
                   </svg>
 
                   <span className={styles.number}>2</span>
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>

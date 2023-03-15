@@ -1,18 +1,14 @@
-
 import { useContext } from "react";
 import { WishlistContext } from "../../App";
 import classNames from "classnames";
 import styles from "./Wishlist.module.scss";
 import stylesBtn from "../Category/Category.module.scss";
-
-
+import Product from "../Product/Product";
 
 const Wishlist = () => {
+  const { productWishlist } = useContext(WishlistContext);
 
-  const {productWishlist} = useContext(WishlistContext)
-  console.log(productWishlist)
   return (
-
     <div className={styles.item}>
       <div className={styles.item__content}>
         <button className={styles.item__delete}>
