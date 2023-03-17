@@ -1,4 +1,4 @@
-.btn {
+.Btn {
   display: inline-block;
   font-weight: 500;
   color: #666666;
@@ -16,61 +16,62 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.btn:hover {
+.Link {
+  color: #000000;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.Btn:hover {
   color: #666666;
   text-decoration: none;
 }
 
-.btn.disabled,
-.btn:disabled {
+.Btn.disabled,
+.Btn:disabled {
   opacity: 0.65;
   box-shadow: none;
   pointer-events: none;
   cursor: none;
 }
 
-.btn_outline_primary {
-  color: #000000;
-  border-color: #000000;
-}
-
-.btn_outline_primary:hover {
-  color: #fff;
-  background-color: #000000;
-  border-color: #000000;
-}
-
-.btn_outline_primary:focus,
-.btn_outline_primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
-}
-
-.btn_outline_primary.disabled,
-.btn_outline_primary:disabled {
-  color: #000000;
-  background-color: transparent;
-}
-
-.products_bottom {
-  text-align: center;
-}
-
-.btn_dark {
+.BtnDark {
   color: #fff;
   background-color: #343a40;
   border-color: #343a40;
   box-shadow: none;
 }
 
-.btn_dark:hover {
+.BtnDark:hover {
   color: #fff;
   background-color: #23272b;
   border-color: #1d2124;
 }
 
-.btn_dark.disabled,
-.btn_dark:disabled {
+.BtnDark.disabled,
+.BtnDark:disabled {
   color: #fff;
   background-color: #343a40;
   border-color: #343a40;
+}
+.BtnOutlinePrimary {
+  color: #000000;
+  border-color: #000000;
+}
+
+.BtnOutlinePrimary:hover {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.BtnOutlinePrimary:focus,
+.BtnOutlinePrimary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.BtnOutlinePrimary.disabled,
+.BtnOutlinePrimary:disabled {
+  color: #000000;
+  background-color: transparent;
 }

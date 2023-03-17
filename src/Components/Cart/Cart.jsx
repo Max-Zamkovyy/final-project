@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "../Cart/Cart.module.scss";
 import img from "../Product/img/product-07.jpg";
 
@@ -33,9 +34,9 @@ const Cart = () => {
 
             <div>
               <p className={styles.item__category}>Dress</p>
-              <a href="/" className={styles.item__name}>
+              <Link to="/" className={styles.item__name}>
                 Oversize cotton sweatshirt
-              </a>
+              </Link>
             </div>
           </div>
 

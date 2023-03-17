@@ -15,22 +15,22 @@ const HomePage = () => {
         <Banner
           imgBanner={bannerImg}
           bannerTitle="Waffle Hooded Coat"
-          bannerBtn="Shop Now"
+          
         />
         <section className="category">
           <div className="container">
             <Chapter name="This Season Collection" />
             <div className="category_grid">
-              <Category img={categoryImg1} categoryName="Glasses" />
-              <Category img={categoryImg2} categoryName="Sneakers" />
-              <Category img={categoryImg3} categoryName="Handbags" />
+              <Category img={categoryImg1} name="Glasses" />
+              <Category img={categoryImg2} name="Sneakers" />
+              <Category img={categoryImg3} name="Handbags" />
             </div>
           </div>
         </section>
 
         <Products />
         <div>
-          <Button bannerBtn="Shop Now" />
+        <Button to="/" name="Shop Now" color="white"></Button>
         </div>
       </main>
     </div>

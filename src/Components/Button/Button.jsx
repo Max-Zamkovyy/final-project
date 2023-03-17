@@ -1,18 +1,14 @@
-import classNames from "classnames";
+import { Link } from "react-router-dom";
 import styles from "./Button.module.scss";
 
-const Button = ({ bannerBtn }) => {
-  
+const Button = (props) => {
+  const { name, to, color, } = props;
+
+  const btnColor = color === "dark" ? styles.BtnDark : styles.BtnOutlinePrimary;
   return (
-    <div className={styles.products_bottom}>
-      <a
-        href="/"
-        className={classNames(styles.btn, styles.btn_outline_primary, styles.btn_dark,
-          styles.btn_full_width)}
-      >
-        {bannerBtn}
-      </a>
-    </div>
+    <Link to={to} className={styles.Btn + " " + btnColor + " " + styles.Link}>
+      {name}
+    </Link>
   );
 };
 

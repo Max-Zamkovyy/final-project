@@ -1,8 +1,8 @@
 import styles from "./Banner.module.scss";
-import classNames from "classnames";
+import Button from "../Button/Button";
 
 const Banner = (props) => {
-  const { imgBanner, bannerTitle, bannerBtn } = props;
+  const { imgBanner, bannerTitle} = props;
   return (
     <section className={styles.banner}>
       <div className={styles.container}>
@@ -11,9 +11,7 @@ const Banner = (props) => {
           <div className={styles.banner__overlay}>
             <div>
               <h1 className={styles.banner__title}>{bannerTitle}</h1>
-              <a href="/" className={classNames(styles.btn, styles.btn_dark)}>
-                {bannerBtn}
-              </a>
+              <Button to="/" name="Shop Now" color="dark"></Button>
             </div>
           </div>
         </div>
