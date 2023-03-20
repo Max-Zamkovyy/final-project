@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { addToWishlist } from "../../Reduser/Reduser";
+import { addToWishlist } from "../../redux/wishlistSlice";
 import styles from "./Product.module.scss";
 
 const Product = (product) => {
