@@ -1,5 +1,4 @@
 import Button from "../Button/Button";
-import classNames from "classnames";
 import styles from "../Summary/Summary.module.scss";
 
 const Summary = () => {

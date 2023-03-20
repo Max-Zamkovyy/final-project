@@ -70,7 +70,7 @@ const Products = () => {
             return (
               <Product
                 id={i}
-                key = {i}
+                key={i}
                 productName={product.name}
                 img={product.img}
                 price={product.price}

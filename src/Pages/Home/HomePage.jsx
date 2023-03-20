@@ -12,11 +12,7 @@ const HomePage = () => {
   return (
     <div className="App">
       <main>
-        <Banner
-          imgBanner={bannerImg}
-          bannerTitle="Waffle Hooded Coat"
-          
-        />
+        <Banner imgBanner={bannerImg} bannerTitle="Waffle Hooded Coat" />
         <section className="category">
           <div className="container">
             <Chapter name="This Season Collection" />
@@ -30,7 +26,7 @@ const HomePage = () => {
 
         <Products />
         <div>
-        <Button to="/" name="Shop Now" color="white"></Button>
+          <Button to="/" name="Shop Now" color="white"></Button>
         </div>
       </main>
     </div>
